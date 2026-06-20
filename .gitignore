@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars
+.env
+.env.*
+.DS_Store
+*.log
+Thumbs.db
+
+# Briefing e materiais internos (não vão para produção)
+*.pdf
+briefing*
