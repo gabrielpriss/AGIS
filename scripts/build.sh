@@ -10,6 +10,7 @@ rm -rf "$DIST"
 mkdir -p "$DIST/assets"
 
 cp "$ROOT/index.html" "$ROOT/main.js" "$ROOT/style.css" "$ROOT/robots.txt" "$ROOT/sitemap.xml" "$DIST/"
+cp "$ROOT/premium.html" "$DIST/"
 cp "$ROOT/assets/"*.webp "$ROOT/assets/"*.css "$ROOT/assets/"*.js "$DIST/assets/"
 cp "$ROOT/_headers" "$DIST/_headers"
 
