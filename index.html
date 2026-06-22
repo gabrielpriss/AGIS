@@ -37,35 +37,126 @@
         }
     </script>
     <style>
+        .nav-link {
+            white-space: nowrap;
+            flex-shrink: 0;
+            position: relative;
+            padding-bottom: 4px;
+        }
         .nav-link.active {
             color: #FFA501;
-            border-bottom: 2px solid #FFA501;
-            padding-bottom: 2px;
+        }
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 2px;
+            background: #FFA501;
+            border-radius: 1px;
         }
         #header {
             background: #000000;
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
         }
         #header.scrolled {
-            padding-top: 0.65rem;
-            padding-bottom: 0.65rem;
+            padding-top: 0.6rem;
+            padding-bottom: 0.6rem;
             box-shadow: 0 4px 28px rgba(0, 0, 0, 0.55);
         }
+        #header .header-inner {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            gap: 0.75rem 1rem;
+            min-height: 3rem;
+        }
+        @media (min-width: 1280px) {
+            #header .header-inner {
+                grid-template-columns: auto 1fr auto;
+                gap: 1rem 1.5rem;
+            }
+        }
+        #header .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            min-width: 0;
+        }
+        #header .header-nav {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 1.25rem;
+        }
+        @media (min-width: 1280px) {
+            #header .header-nav {
+                display: flex;
+            }
+        }
+        @media (min-width: 1536px) {
+            #header .header-nav {
+                gap: 2rem;
+            }
+        }
+        #header .header-actions {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 0.5rem;
+            flex-shrink: 0;
+        }
+        @media (min-width: 1280px) {
+            #header .header-actions {
+                gap: 0.75rem;
+            }
+        }
         #header .header-logo {
-            height: 3.25rem;
+            height: 2.75rem;
+            width: auto;
             transition: height 0.3s ease;
         }
         #header.scrolled .header-logo {
-            height: 2.25rem;
+            height: 2rem;
         }
-        #header .header-brand-name {
-            font-size: 1.05rem;
-            transition: font-size 0.3s ease;
+        @media (min-width: 1280px) {
+            #header .header-logo {
+                height: 3.25rem;
+            }
+            #header.scrolled .header-logo {
+                height: 2.25rem;
+            }
         }
-        #header.scrolled .header-brand-name {
-            font-size: 0.85rem;
+        #header .header-phone {
+            display: none;
+        }
+        @media (min-width: 1536px) {
+            #header .header-phone {
+                display: inline-flex;
+            }
+        }
+        #header .header-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            gap: 0.375rem;
+            line-height: 1.2;
+        }
+        #header .header-cta-label-full {
+            display: none;
+        }
+        @media (min-width: 640px) {
+            #header .header-cta-label-full {
+                display: inline;
+            }
+            #header .header-cta-label-short {
+                display: none;
+            }
         }
         .gallery-mosaic {
             display: grid;
@@ -130,27 +221,29 @@
 
     <!-- Header -->
     <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
-        <div class="max-w-[1300px] mx-auto px-5 flex justify-between items-center">
+        <div class="max-w-[1300px] mx-auto px-4 sm:px-5 header-inner">
 
-            <div class="flex items-center gap-4 min-w-0">
-                <img src="assets/logo-prata.webp" alt="AGIS CAR SERVICE" class="header-logo object-contain flex-shrink-0" onerror="this.src='assets/logo.webp'">
-                <div class="hidden sm:block min-w-0">
-                    <div class="header-brand-name font-display font-bold text-site-text uppercase tracking-wide leading-tight">AGIS CAR SERVICE</div>
-                    <div class="font-body text-[0.6rem] text-site-muted tracking-widest uppercase mt-0.5">Especializada em carros nacionais e importados</div>
-                </div>
+            <div class="header-brand">
+                <a href="#hero" aria-label="AGIS CAR SERVICE — Início">
+                    <img src="assets/logo-prata.webp" alt="AGIS CAR SERVICE" class="header-logo object-contain flex-shrink-0" onerror="this.src='assets/logo.webp'">
+                </a>
             </div>
 
-            <nav class="hidden lg:flex gap-8">
-                <a href="#hero"       class="nav-link font-body font-semibold text-[0.7rem] uppercase tracking-[0.14em] text-site-text hover:text-gold transition-colors duration-300">Início</a>
-                <a href="#servicos"   class="nav-link font-body font-semibold text-[0.7rem] uppercase tracking-[0.14em] text-site-text hover:text-gold transition-colors duration-300">Serviços</a>
-                <a href="#avaliacoes" class="nav-link font-body font-semibold text-[0.7rem] uppercase tracking-[0.14em] text-site-text hover:text-gold transition-colors duration-300">Avaliações</a>
-                <a href="#quem-somos" class="nav-link font-body font-semibold text-[0.7rem] uppercase tracking-[0.14em] text-site-text hover:text-gold transition-colors duration-300">Quem Somos</a>
-                <a href="#importados" class="nav-link font-body font-semibold text-[0.7rem] uppercase tracking-[0.14em] text-site-text hover:text-gold transition-colors duration-300">Especialização</a>
+            <nav class="header-nav" aria-label="Navegação principal">
+                <a href="#hero"       class="nav-link font-body font-semibold text-[0.68rem] uppercase tracking-[0.12em] text-site-text hover:text-gold transition-colors duration-300">Início</a>
+                <a href="#servicos"   class="nav-link font-body font-semibold text-[0.68rem] uppercase tracking-[0.12em] text-site-text hover:text-gold transition-colors duration-300">Serviços</a>
+                <a href="#avaliacoes" class="nav-link font-body font-semibold text-[0.68rem] uppercase tracking-[0.12em] text-site-text hover:text-gold transition-colors duration-300">Avaliações</a>
+                <a href="#quem-somos" class="nav-link font-body font-semibold text-[0.68rem] uppercase tracking-[0.12em] text-site-text hover:text-gold transition-colors duration-300">Quem Somos</a>
+                <a href="#importados" class="nav-link font-body font-semibold text-[0.68rem] uppercase tracking-[0.12em] text-site-text hover:text-gold transition-colors duration-300">Especialização</a>
             </nav>
 
-            <div class="flex items-center gap-3">
-                <a href="tel:+5541987065961" class="hidden lg:inline-block font-body font-semibold text-[0.7rem] uppercase tracking-wide border border-site-border text-site-muted px-4 py-2.5 rounded-md hover:border-gold hover:text-gold transition-all duration-300">(41) 98706-5961</a>
-                <a href="https://wa.me/5541987065961?text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20Agis%20Car%20Service%20Loja%20Batel%2C%20quero%20solicitar%20um%20atendimento." target="_blank" class="inline-block font-body font-semibold text-[0.7rem] uppercase tracking-wide bg-gold text-black px-5 py-2.5 rounded-md shadow-[0_0_20px_rgba(255,165,1,0.18)] hover:bg-gold-hover transition-all duration-300 wa-link" data-wa="contato-header">Falar com Atendente <i class="fa-brands fa-whatsapp ml-1"></i></a>
+            <div class="header-actions">
+                <a href="tel:+5541987065961" class="header-phone font-body font-semibold text-[0.68rem] uppercase tracking-wide border border-site-border text-site-muted px-3 py-2 rounded-md hover:border-gold hover:text-gold transition-all duration-300 whitespace-nowrap">(41) 98706-5961</a>
+                <a href="https://wa.me/5541987065961?text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20Agis%20Car%20Service%20Loja%20Batel%2C%20quero%20solicitar%20um%20atendimento." target="_blank" class="header-cta font-body font-semibold text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wide bg-gold text-black px-3 sm:px-5 py-2.5 rounded-md shadow-[0_0_20px_rgba(255,165,1,0.18)] hover:bg-gold-hover transition-all duration-300 wa-link" data-wa="contato-header">
+                    <span class="header-cta-label-short">WhatsApp</span>
+                    <span class="header-cta-label-full">Falar com Atendente</span>
+                    <i class="fa-brands fa-whatsapp text-sm" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </header>
