@@ -52,7 +52,7 @@
             var icon = document.createElement('i');
             icon.className = 'fa-brands fa-whatsapp ml-2';
             importadosCta.appendChild(icon);
-            importadosCta.href = 'https://wa.me/5541987065961?text=' + encodeURIComponent(
+            importadosCta.href = 'https://wa.me/5541999760977?text=' + encodeURIComponent(
                 'Olá, estou entrando em contato através do site Agis Car Service Loja Batel, ' + data.importadosWa
             );
         }
