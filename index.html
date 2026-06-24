@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKTCPWWL');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGIS CAR SERVICE | Centro Automotivo no Batel</title>
@@ -161,29 +168,19 @@
         .gallery-mosaic {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 250px 250px 220px;
             gap: 12px;
         }
-        .gallery-mosaic > div { min-height: 200px; }
-        .item-1 { grid-column: 1 / 2; grid-row: 1 / 3; }
-        .item-2 { grid-column: 2 / 4; grid-row: 1 / 2; }
-        .item-3 { grid-column: 2 / 3; grid-row: 2 / 3; }
-        .item-4 { grid-column: 3 / 4; grid-row: 2 / 3; }
-        .item-5 { grid-column: 1 / 2; grid-row: 3 / 4; }
-        .item-6 { grid-column: 2 / 3; grid-row: 3 / 4; }
-        .item-7 { grid-column: 3 / 4; grid-row: 3 / 4; }
+        .gallery-mosaic > div {
+            min-height: 220px;
+            aspect-ratio: 4 / 3;
+        }
         @media (max-width: 992px) {
             .gallery-mosaic {
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: auto;
+                grid-template-columns: repeat(2, 1fr);
             }
-            .item-1 { grid-column: 1 / 3; grid-row: auto; height: 280px; }
-            .item-2 { grid-column: 1 / 3; grid-row: auto; height: 220px; }
-            .item-3 { grid-column: 1 / 2; grid-row: auto; height: 200px; }
-            .item-4 { grid-column: 2 / 3; grid-row: auto; height: 200px; }
-            .item-5 { grid-column: 1 / 2; grid-row: auto; height: 200px; }
-            .item-6 { grid-column: 2 / 3; grid-row: auto; height: 200px; }
-            .item-7 { grid-column: 1 / 3; grid-row: auto; height: 220px; }
+            .gallery-mosaic > div {
+                min-height: 180px;
+            }
         }
         .reveal {
             opacity: 0;
@@ -218,6 +215,10 @@
     </script>
 </head>
 <body class="bg-site-dark text-site-text overflow-x-hidden font-body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKTCPWWL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Header -->
     <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
@@ -480,13 +481,15 @@
                 <h2 class="font-display font-extrabold uppercase leading-tight text-[2.2rem] md:text-[2.8rem]">Nossa Estrutura</h2>
             </div>
             <div class="gallery-mosaic reveal">
-                <div data-gallery-index="0" class="item-1 bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/galeria-interna.webp');"></div>
-                <div data-gallery-index="1" class="item-2 bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/galeria-exterior.webp');"></div>
-                <div data-gallery-index="2" class="item-3 bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/galeria-servico-01.webp');"></div>
-                <div data-gallery-index="3" class="item-4 bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/galeria-servico-02.webp');"></div>
-                <div data-gallery-index="4" class="item-5 bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/hero-aerea.webp');"></div>
-                <div data-gallery-index="5" class="item-6 bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/galeria-porsche-motul.webp');"></div>
-                <div data-gallery-index="6" class="item-7 bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/galeria-audi-rs.webp');"></div>
+                <div data-gallery-index="0" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file1.png');" role="img" aria-label="Fachada da AGIS Car Service"></div>
+                <div data-gallery-index="1" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file3.png');" role="img" aria-label="Equipamento de alinhamento na oficina"></div>
+                <div data-gallery-index="2" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file8.png');" role="img" aria-label="Pontiac GTO na oficina"></div>
+                <div data-gallery-index="3" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file2.png');" role="img" aria-label="Audi R8 em alinhamento"></div>
+                <div data-gallery-index="4" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file5.png');" role="img" aria-label="Esportivo vermelho em alinhamento"></div>
+                <div data-gallery-index="5" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file4.png');" role="img" aria-label="Rolls-Royce em atendimento"></div>
+                <div data-gallery-index="6" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file6.png');" role="img" aria-label="Audi RS Q3 em manutenção"></div>
+                <div data-gallery-index="7" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file9.png');" role="img" aria-label="Porsche em frente à AGIS Car Service"></div>
+                <div data-gallery-index="8" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file7.png');" role="img" aria-label="Estrutura da AGIS Pneus"></div>
             </div>
             <div class="text-center mt-10 reveal">
                 <a href="https://wa.me/5541987065961?text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20Agis%20Car%20Service%20Loja%20Batel%2C%20quero%20solicitar%20um%20atendimento%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" class="inline-block font-body font-semibold text-xs uppercase tracking-wide bg-gold text-black px-8 py-4 rounded-md shadow-[0_0_24px_rgba(255,165,1,0.15)] hover:bg-gold-hover transition-all duration-300 wa-link" data-wa="Informações sobre a estrutura">Falar com Atendente <i class="fa-brands fa-whatsapp ml-2"></i></a>
@@ -569,11 +572,13 @@
                 </div>
                 <div>
                     <h3 class="font-display font-bold text-gold uppercase tracking-wide text-base mb-5">Redes Sociais</h3>
-                    <a href="#" class="font-body text-site-muted text-sm block mb-2 hover:text-gold transition-colors duration-300">Instagram da AGIS</a>
+                    <a href="https://www.instagram.com/agiscarservice/" target="_blank" rel="noopener noreferrer" class="font-body text-site-muted text-sm inline-flex items-center gap-2 hover:text-gold transition-colors duration-300">
+                        <i class="fa-brands fa-instagram text-base"></i> @agiscarservice
+                    </a>
                 </div>
             </div>
             <div class="pt-6 border-t border-site-border text-center">
-                <p class="font-body text-[#444] text-xs tracking-wide">&copy; 2026 AGIS CAR SERVICE. Todos os direitos reservados. Desenvolvido por <span class="text-site-muted">Conceito Prime</span>.</p>
+                <p class="font-body text-[#444] text-xs tracking-wide">&copy; 2026 AGIS CAR SERVICE. Todos os direitos reservados. Desenvolvido por <a href="https://conceitop.com.br" target="_blank" rel="noopener noreferrer" class="text-site-muted hover:text-gold transition-colors duration-300">Conceito Prime</a>.</p>
             </div>
         </div>
     </footer>

@@ -66,13 +66,15 @@ window.SITE_CONFIG = {
             diferencial2Text: 'Equipe e estrutura preparadas para atender desde carros populares até BMW, Audi, Mercedes e Volkswagen, com o mesmo padrão de qualidade.',
             footerTagline: 'Centro automotivo no Batel — cuidado especializado para todos os carros.',
             gallery: [
-                'assets/galeria-interna.webp',
-                'assets/galeria-exterior.webp',
-                'assets/galeria-servico-01.webp',
-                'assets/galeria-servico-02.webp',
-                'assets/hero-aerea.webp',
-                'assets/galeria-porsche-motul.webp',
-                'assets/galeria-audi-rs.webp'
+                'assets/file1.png',
+                'assets/file3.png',
+                'assets/file8.png',
+                'assets/file2.png',
+                'assets/file5.png',
+                'assets/file4.png',
+                'assets/file6.png',
+                'assets/file9.png',
+                'assets/file7.png'
             ]
         },
         premium: {
@@ -99,13 +101,15 @@ window.SITE_CONFIG = {
             diferencial2Text: 'Estrutura e equipe preparadas para BMW, Audi, Mercedes e Volkswagen, com o mesmo padrão de qualidade em qualquer marca.',
             footerTagline: 'Centro automotivo premium no Batel — especialistas em importados.',
             gallery: [
-                'assets/galeria-porsche-motul.webp',
-                'assets/galeria-audi-rs.webp',
-                'assets/galeria-collage.webp',
-                'assets/galeria-interna.webp',
-                'assets/galeria-exterior.webp',
-                'assets/galeria-servico-02.webp',
-                'assets/hero-aerea.webp'
+                'assets/file9.png',
+                'assets/file2.png',
+                'assets/file4.png',
+                'assets/file6.png',
+                'assets/file5.png',
+                'assets/file8.png',
+                'assets/file1.png',
+                'assets/file3.png',
+                'assets/file7.png'
             ]
         }
     }
