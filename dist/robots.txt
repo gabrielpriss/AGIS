@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.agis-car-service.com.br/sitemap.xml
+Sitemap: https://agiscarservice.com.br/sitemap.xml
