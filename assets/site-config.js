@@ -72,9 +72,9 @@ window.SITE_CONFIG = {
                 'assets/galeria-audi-rs.webp',
                 'assets/galeria-mosaic-05.webp',
                 'assets/galeria-mosaic-06.webp',
-                'assets/galeria-mosaic-01.webp',
+                'assets/galeria-mosaic-04.webp',
                 'assets/galeria-porsche-motul.webp',
-                'assets/galeria-mosaic-02.webp'
+                'assets/galeria-mosaic-08.webp'
             ]
         },
         premium: {
@@ -104,12 +104,12 @@ window.SITE_CONFIG = {
                 'assets/galeria-porsche-motul.webp',
                 'assets/galeria-audi-rs.webp',
                 'assets/galeria-mosaic-06.webp',
-                'assets/galeria-mosaic-01.webp',
+                'assets/galeria-mosaic-04.webp',
                 'assets/galeria-mosaic-05.webp',
                 'assets/galeria-mosaic-03.webp',
                 'assets/galeria-exterior.webp',
                 'assets/galeria-interna.webp',
-                'assets/galeria-mosaic-02.webp'
+                'assets/galeria-mosaic-08.webp'
             ]
         }
     }
