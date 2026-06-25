@@ -53,7 +53,7 @@ window.SITE_CONFIG = {
             importadosHeading: 'Qualidade, confiança e atenção — do popular ao importado.',
             importadosText1: 'Na AGIS, cada veículo recebe o mesmo rigor técnico: diagnóstico preciso, peças e lubrificantes de linha e mecânicos preparados para nacionais e importados.',
             importadosText2: 'Nossa estrutura no Batel foi pensada para entregar experiência completa — do orçamento à entrega. Você acompanha cada etapa com transparência e atendimento humano.',
-            importadosImage: 'assets/galeria-servico-01.webp',
+            importadosImage: 'assets/galeria-interna.webp',
             importadosImageAlt: 'Veículos em atendimento na AGIS Car Service',
             importadosCta: 'Agendar Atendimento',
             importadosWa: 'quero solicitar um atendimento.',
@@ -66,15 +66,15 @@ window.SITE_CONFIG = {
             diferencial2Text: 'Equipe e estrutura preparadas para atender desde carros populares até BMW, Audi, Mercedes e Volkswagen, com o mesmo padrão de qualidade.',
             footerTagline: 'Centro automotivo no Batel — cuidado especializado para todos os carros.',
             gallery: [
-                'assets/file1.png',
-                'assets/file3.png',
-                'assets/file8.png',
-                'assets/file2.png',
-                'assets/file5.png',
-                'assets/file4.png',
-                'assets/file6.png',
-                'assets/file9.png',
-                'assets/file7.png'
+                'assets/galeria-exterior.webp',
+                'assets/galeria-interna.webp',
+                'assets/galeria-mosaic-03.webp',
+                'assets/galeria-audi-rs.webp',
+                'assets/galeria-mosaic-05.webp',
+                'assets/galeria-mosaic-06.webp',
+                'assets/galeria-mosaic-01.webp',
+                'assets/galeria-porsche-motul.webp',
+                'assets/galeria-mosaic-02.webp'
             ]
         },
         premium: {
@@ -101,15 +101,15 @@ window.SITE_CONFIG = {
             diferencial2Text: 'Estrutura e equipe preparadas para BMW, Audi, Mercedes e Volkswagen, com o mesmo padrão de qualidade em qualquer marca.',
             footerTagline: 'Centro automotivo premium no Batel — especialistas em importados.',
             gallery: [
-                'assets/file9.png',
-                'assets/file2.png',
-                'assets/file4.png',
-                'assets/file6.png',
-                'assets/file5.png',
-                'assets/file8.png',
-                'assets/file1.png',
-                'assets/file3.png',
-                'assets/file7.png'
+                'assets/galeria-porsche-motul.webp',
+                'assets/galeria-audi-rs.webp',
+                'assets/galeria-mosaic-06.webp',
+                'assets/galeria-mosaic-01.webp',
+                'assets/galeria-mosaic-05.webp',
+                'assets/galeria-mosaic-03.webp',
+                'assets/galeria-exterior.webp',
+                'assets/galeria-interna.webp',
+                'assets/galeria-mosaic-02.webp'
             ]
         }
     }

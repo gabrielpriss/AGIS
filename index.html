@@ -123,12 +123,12 @@
             }
         }
         #header .header-logo {
-            height: 2.75rem;
+            height: 3.5rem;
             width: auto;
             transition: height 0.3s ease;
         }
         #header.scrolled .header-logo {
-            height: 2rem;
+            height: 3.5rem;
         }
         @media (min-width: 1280px) {
             #header .header-logo {
@@ -173,6 +173,9 @@
         .gallery-mosaic > div {
             min-height: 220px;
             aspect-ratio: 4 / 3;
+            background-size: cover;
+            background-position: center;
+            image-rendering: auto;
         }
         @media (max-width: 992px) {
             .gallery-mosaic {
@@ -226,7 +229,7 @@
 
             <div class="header-brand">
                 <a href="#hero" aria-label="AGIS CAR SERVICE — Início">
-                    <img src="assets/logo-prata.webp" alt="AGIS CAR SERVICE" class="header-logo object-contain flex-shrink-0" onerror="this.src='assets/logo.webp'">
+                    <img src="assets/logo-prata.webp" alt="AGIS CAR SERVICE" class="header-logo object-contain flex-shrink-0" width="1686" height="560" onerror="this.src='assets/logo.webp'">
                 </a>
             </div>
 
@@ -453,7 +456,7 @@
     <section id="importados" class="py-16 md:py-20 bg-white">
         <div class="max-w-[1300px] mx-auto px-5">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div id="importados-image" class="reveal h-[420px] bg-gray-100 rounded-md bg-cover bg-center order-2 lg:order-1" style="background-image: url('assets/galeria-servico-01.webp');" role="img" aria-label="Veículos em atendimento na AGIS Car Service"></div>
+                <div id="importados-image" class="reveal h-[420px] bg-gray-100 rounded-md bg-cover bg-center order-2 lg:order-1" style="background-image: url('assets/galeria-interna.webp');" role="img" aria-label="Veículos em atendimento na AGIS Car Service"></div>
                 <div class="order-1 lg:order-2 reveal">
                     <div class="flex items-stretch gap-4 mb-6">
                         <div class="w-[3px] bg-gold rounded-full flex-shrink-0"></div>
@@ -481,15 +484,15 @@
                 <h2 class="font-display font-extrabold uppercase leading-tight text-[2.2rem] md:text-[2.8rem]">Nossa Estrutura</h2>
             </div>
             <div class="gallery-mosaic reveal">
-                <div data-gallery-index="0" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file1.png');" role="img" aria-label="Fachada da AGIS Car Service"></div>
-                <div data-gallery-index="1" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file3.png');" role="img" aria-label="Equipamento de alinhamento na oficina"></div>
-                <div data-gallery-index="2" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file8.png');" role="img" aria-label="Pontiac GTO na oficina"></div>
-                <div data-gallery-index="3" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file2.png');" role="img" aria-label="Audi R8 em alinhamento"></div>
-                <div data-gallery-index="4" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file5.png');" role="img" aria-label="Esportivo vermelho em alinhamento"></div>
-                <div data-gallery-index="5" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file4.png');" role="img" aria-label="Rolls-Royce em atendimento"></div>
-                <div data-gallery-index="6" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file6.png');" role="img" aria-label="Audi RS Q3 em manutenção"></div>
-                <div data-gallery-index="7" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file9.png');" role="img" aria-label="Porsche em frente à AGIS Car Service"></div>
-                <div data-gallery-index="8" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/file7.png');" role="img" aria-label="Estrutura da AGIS Pneus"></div>
+                <div data-gallery-index="0" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/galeria-exterior.webp');" role="img" aria-label="Fachada da AGIS Car Service"></div>
+                <div data-gallery-index="1" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/galeria-interna.webp');" role="img" aria-label="Equipamento de alinhamento na oficina"></div>
+                <div data-gallery-index="2" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/galeria-mosaic-03.webp');" role="img" aria-label="Pontiac GTO na oficina"></div>
+                <div data-gallery-index="3" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/galeria-audi-rs.webp');" role="img" aria-label="Audi R8 em alinhamento"></div>
+                <div data-gallery-index="4" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/galeria-mosaic-05.webp');" role="img" aria-label="Esportivo vermelho em alinhamento"></div>
+                <div data-gallery-index="5" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/galeria-mosaic-06.webp');" role="img" aria-label="Rolls-Royce em atendimento"></div>
+                <div data-gallery-index="6" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/galeria-mosaic-01.webp');" role="img" aria-label="Audi RS Q3 em manutenção"></div>
+                <div data-gallery-index="7" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/galeria-porsche-motul.webp');" role="img" aria-label="Porsche em frente à AGIS Car Service"></div>
+                <div data-gallery-index="8" class="bg-site-deep rounded-md bg-cover bg-center transition-transform duration-300 hover:scale-[1.02] hover:z-10" style="background-image: url('assets/galeria-mosaic-02.webp');" role="img" aria-label="Equipamentos e estrutura da oficina"></div>
             </div>
             <div class="text-center mt-10 reveal">
                 <a href="https://wa.me/5541999760977?text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20Agis%20Car%20Service%20Loja%20Batel%2C%20quero%20solicitar%20um%20atendimento%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" class="inline-block font-body font-semibold text-xs uppercase tracking-wide bg-gold text-black px-8 py-4 rounded-md shadow-[0_0_24px_rgba(255,165,1,0.15)] hover:bg-gold-hover transition-all duration-300 wa-link" data-wa="Informações sobre a estrutura">Falar com Atendente <i class="fa-brands fa-whatsapp ml-2"></i></a>
